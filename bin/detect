@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -f $1/.buildpacks ]; then
-  echo "Multipack"
+  echo "Multipack/sh19910711"
   exit 0
 else
   echo "no .buildpacks file"

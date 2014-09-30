@@ -34,6 +34,7 @@ for BUILDPACK in $(cat $1/.buildpacks); do
     fi
     cd $dir
 
+    echo "=====> Branch: $branch"
     if [ "$branch" != "" ]; then
       echo "=====> Checkout Buildpack Branch: $branch"
       git checkout $branch >/dev/null 2>&1
